@@ -47,7 +47,8 @@ public class RideEntity {
                       Double distanceKm,
                       Double durationMinutes,
                       RideStatus status,
-                      Instant startedAt) {
+                      Instant startedAt,
+                      List<CoordinateEntity> routes) {
         this.originLatitude = originLatitude;
         this.originLongitude = originLongitude;
         this.destinationLatitude = destinationLatitude;
@@ -56,6 +57,7 @@ public class RideEntity {
         this.durationMinutes = durationMinutes;
         this.status = status;
         this.startedAt = startedAt;
+        this.routes = routes;
         this.currentPositionInRoute = 0;
     }
 

@@ -1,4 +1,4 @@
-# Ride Simulation Service
+# Sistema de inteligência veicular com roteamento e gestão de autonomia em tempo real.
 
 Este projeto simula viagens veiculares com foco em sistemas embarcados, realizando estimativas de percurso, consumo de combustível, tempo restante e progresso, tudo com base em rotas reais geradas pela API do [OpenRouteService](https://openrouteservice.org/).
 
@@ -23,6 +23,28 @@ Este projeto simula viagens veiculares com foco em sistemas embarcados, realizan
 - **PostgreSQL** (No projeto foi usado banco em memória H2)
 - **WebClient** para consumo da API externa
 - **OpenRouteService API** para cálculo de rotas
+
+---
+
+## Aplicações embarcadas veiculares
+
+Este projeto foi concebido para ser **integrado nativamente à central multimídia do veículo**, oferecendo ao motorista uma experiência embarcada sob medida. Pode ser embarcado de fábrica, apresentando:
+
+- Informações de trajeto, combustível e autonomia em tempo real
+- Finalização automática da viagem ao atingir o destino
+- Operação sem necessidade de conexão constante com a internet
+- Design adaptado à identidade visual da montadora
+- Potencial futuro para integração com sensores reais via CAN bus (tanque, odômetro, velocidade)
+
+> Essa abordagem torna o projeto ideal para centrais OEM, frotas inteligentes ou painéis embarcados customizados.
+
+---
+
+## Visão do painel (simulação)
+
+Abaixo está uma ilustração simulando como este sistema pode aparecer em uma central multimídia nativa de um veículo:
+
+![Interface do sistema](./ride-service.png)
 
 ---
 
@@ -175,9 +197,7 @@ Certifique-se de ter a obter o token da API e configurar a variável de ambiente
 
 ---
 
-## Créditos
-
-Esse projeto foi desenvolvido por [Matheus Valdevino](https://github.com/matheusvsdev) com foco em simulações embarcadas e experiências realistas baseadas em geolocalização.
+Desenvolvido por [Matheus Valdevino](https://github.com/matheusvsdev).
 
 ---
 

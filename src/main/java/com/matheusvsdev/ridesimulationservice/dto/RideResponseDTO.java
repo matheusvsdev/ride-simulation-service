@@ -1,5 +1,7 @@
 package com.matheusvsdev.ridesimulationservice.dto;
 
+import com.matheusvsdev.ridesimulationservice.entity.enums.RideStatus;
+
 import java.util.List;
 
 public record RideResponseDTO(
@@ -10,7 +12,10 @@ public record RideResponseDTO(
         Double destinationLongitude,
         Double distanceKm,
         Double durationMinutes,
-        String status,
-        Integer currentPositionInRoute,
+        Double currentFuelLiters,
+        Double litersToRefuel,
+        String vehicleModel,
+        RideStatus status,
+        Double progressPercentage,
         List<CoordinateDTO> route
 ) {}

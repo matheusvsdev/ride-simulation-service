@@ -1,7 +1,6 @@
 package com.matheusvsdev.ridesimulationservice.dto;
 
-public record CoordinateDTO(
-        Double latitude,
-        Double longitude,
+public record RideProgressRequestDTO(
         Integer positionInRoute
-) {}
+) {
+}

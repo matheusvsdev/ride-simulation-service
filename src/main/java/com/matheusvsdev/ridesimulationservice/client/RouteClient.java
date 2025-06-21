@@ -1,8 +1,8 @@
 package com.matheusvsdev.ridesimulationservice.client;
 
-import com.matheusvsdev.ridesimulationservice.client.dto.RouteResult;
+import com.matheusvsdev.ridesimulationservice.client.dto.RouteClientResult;
 import com.matheusvsdev.ridesimulationservice.dto.RideRequestDTO;
 
 public interface RouteClient {
-    RouteResult getRoute(RideRequestDTO request);
+    RouteClientResult getRoute(RideRequestDTO request);
 }

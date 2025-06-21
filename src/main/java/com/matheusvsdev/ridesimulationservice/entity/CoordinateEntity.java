@@ -20,8 +20,8 @@ public class CoordinateEntity {
     private Integer positionInRoute;
 
     @ManyToOne
-    @JoinColumn(name = "route_id")
-    private RouteEntity route;
+    @JoinColumn(name = "ride_id")
+    private RideEntity ride;
 
     public CoordinateEntity(Double latitude,
                             Double longitude,
@@ -29,9 +29,5 @@ public class CoordinateEntity {
         this.latitude = latitude;
         this.longitude = longitude;
         this.positionInRoute = positionInRoute;
-    }
-
-    public void setRoute(RouteEntity route) {
-        this.route = route;
     }
 }

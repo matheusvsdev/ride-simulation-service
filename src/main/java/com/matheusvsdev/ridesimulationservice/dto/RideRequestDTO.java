@@ -4,5 +4,7 @@ public record RideRequestDTO(
         Double originLatitude,
         Double originLongitude,
         Double destinationLatitude,
-        Double destinationLongitude
+        Double destinationLongitude,
+        Double currentFuelLiters,
+        Long vehicleId
 ) {}
